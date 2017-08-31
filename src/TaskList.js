@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
 import Task from "./Task";
 import TaskInput from "./TaskInput";
+import base from "./base";
 
 class TaskList extends Component {
+	static propTypes = {
+    tasks: React.PropTypes.array
+  };
+
 	constructor(props) {
 	  super(props);
-	  this.state = { tasks: [] };
+	  this.state = { tasks: this.props.tasks || [] };
 	  this.addTask = this.addTask.bind(this);
 	  this.removeTask = this.removeTask.bind(this);
 	}
+
+	componentWillMount(){
+    this.ref = base.syncState('/taks', {
+      context: this,
+      state: 'tasks',
+      asArray: true
+    });
+  }
 
 	addTask(newName) {
 	  this.setState({ tasks: [...this.state.tasks, newName] });

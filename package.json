@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^4.3.0",
+    "promise-polyfill": "^6.0.2",
+    "re-base": "^3.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
+    "react-scripts": "1.0.12",
+    "rebase": "^0.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
