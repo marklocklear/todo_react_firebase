@@ -1,3 +1,7 @@
+-This app written for [JARTA-Just Another React Todo App](https://medium.com/@marklocklear/jarta-just-another-react-todo-app-e71a75751290)
+
+-You can see [Live App on Heroku](https://tranquil-coast-20543.herokuapp.com/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
